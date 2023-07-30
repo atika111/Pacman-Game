@@ -14,7 +14,7 @@ const NoteForm = ({style }) => {
 
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem("notes"))
-    setNotes(savedNotes)
+    setNotes(savedNotes  || [])
 
   },[])
 

@@ -4,6 +4,7 @@ import { faEnvelope, faBoxArchive } from "@fortawesome/free-solid-svg-icons";
 import NoteModal from "./NoteModal";
 
 function NoteList({ notes, handleDealetNote, handleClickOpenModal}) {
+  console.log('notes: ', notes);
   return (
     <div className="grid-note">
       {notes.map((note) => (
