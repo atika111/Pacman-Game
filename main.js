@@ -51,7 +51,7 @@ function create_board(size_x, size_y) {
         html += `<span class="inner_span walls" id="${id}"></span>`;
         data_struc[cord_y][cord_x] = new Board_square(true, false, false, false);
       } else if (maze[cord_y][cord_x] === ".") {
-        html += `<span class="inner_span pellets" id="${id}"><img src="./images/dot.jpeg"></span>`;
+        html += `<span class="inner_span pellets" id="${id}"><img src="./images/dot.jpg"></span>`;
         data_struc[cord_y][cord_x] = new Board_square(false, true, false, false);
       } else if (maze[cord_y][cord_x] === "G") {
         ghost_pos.push([cord_y, cord_x]);
