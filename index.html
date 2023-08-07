@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./alert.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>game</title>
+  </head>
+
+  <body>
+    <div class="wrapper d-flex justify-content-center align-items-center">
+      <!--Main Grid container-->
+      <div class="frame-container">
+        <!-- POINTS ID-->
+        <span id="score" class="text-warning fw-bold py-2 fs-4 fst-italic"
+          >0</span
+        >
+        <!-- END -->
+        <div class="main_container"></div>
+      </div>
+      <div class="alert-Game">
+        <button id="replay-btn" type="button">Play Again
+          <i class="fa fa-rotate-right" style="color: #f6f67ddf; font-size: 3rem"></i>
+        </button>
+
+        <span id="alert_msg"></span>
+      </div>
+    </div>
+    <!--Attachments-->
+    <audio id="end" src="./Sounds/pacman_death.mp3"></audio>
+    <audio id="waka" src="./Sounds/pac-man-waka-waka.mp3"></audio>
+    <audio id="win" src="./Sounds/pacman_win.mp3"></audio>
+    <script src="./ghost.js"></script>
+    <script src="./board.js"></script>
+    <script src="./player.js"></script>
+    <script src="./main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
